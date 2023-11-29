@@ -1,0 +1,72 @@
+
+---------- Documentação Da API ----------
+
+
+Observação = O {key} que ta na urls é para voce informar o key, o key ele um int ou string UNICOs cada item vai ter um key diferente e não podem ser iguais!
+
+
+------------------------------------------
+
+URL = http://127.0.0.1:8000/
+
+Método = GET
+
+Essa rota vai retornar todos os items do banco
+
+------------------------------------------
+
+URL = http://127.0.0.1:8000/item-criar/
+
+Método = POST
+
+Essa rota vai Criar um item no banco, vai ter que enviar um json informando o [key, task, finished]
+
+------------------------------------------
+
+URL = http://127.0.0.1:8000/item-pegar/ {key} /
+
+Método = GET
+
+Essa rota vai retornar o item que foi solicitado no {key}, ela puxa apenas 1 item
+
+------------------------------------------
+
+URL = http://127.0.0.1:8000/item-atualizar/ {key} /
+
+Método = PUT
+
+Essa rota vai atualizar um item que ja esta no banco,Voce vai informar o item no (key) e voce va ter que mandar um json junto informando as alterações do item
+
+------------------------------------------
+
+URL = http://127.0.0.1:8000/item-deletar/ {key} /
+
+Método = DELETE
+
+Essa rota vai deletar um item do banco, basta apenas passar o {key} do item na url
+
+------------------------------------------------------------------
+
+--- Area de administração ---
+
+URL = http://127.0.0.1:8000/admin
+
+Usuario = admin
+Senha = admin
+
+Voce vai ter acesso a pagina de administração do django, podendo fazer todas as coisas de cima [ver, editar, criar, deletar] de forma mais rapida !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
